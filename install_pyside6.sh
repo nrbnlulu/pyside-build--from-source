@@ -1,6 +1,7 @@
 # run with venv
 wget https://download.qt.io/development_releases/prebuilt/libclang/libclang-release_100-based-linux-Rhel7.6-gcc5.3-x86_64.7z
 7z x libclang-release_100-based-linux-Rhel7.6-gcc5.3-x86_64.7z
+rm libclang-release_100-based-linux-Rhel7.6-gcc5.3-x86_64.7z
 export CLANG_INSTALL_DIR=$PWD/libclang
 git clone --recursive https://code.qt.io/pyside/pyside-setup
 cd pyside-setup && git checkout 6.3.1
