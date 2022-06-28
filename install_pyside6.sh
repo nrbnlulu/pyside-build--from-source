@@ -6,6 +6,6 @@ git clone --recursive https://code.qt.io/pyside/pyside-setup
 cd pyside-setup && git checkout 6.3.1
 source ../venv/bin/activate
 python -m pip install -r requirements.txt
-python -m pip install setuptools==62.3.3
+python -m pip install setuptools==62.3.3 # resolves https://codereview.qt-project.org/c/pyside/pyside-setup/+/415268
 # replace </home/nir/Qt/6.3.1/gcc_64/bin/qtpaths> with your path 
 python setup.py install --qtpaths=/home/nir/Qt/6.3.1/gcc_64/bin/qtpaths --build-tests --ignore-git --parallel=8
